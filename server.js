@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.post('/save-name', (req, res) => {
     const name = req.body.name;
-    fs.appendFile('name.txt', name + '\n', err => {
+    fs.appendFile('./site/name.txt', name + '\n', err => {
         if (err) throw err;
         console.log('Saved!');
     });
