@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.post('/save-name', (req, res) => {
     const name = req.body.name;
-    fs.appendFile('./site/name.txt', name + '\n', err => {
+    fs.appendFile('/site/name.txt', name + '\n', err => {
         if (err) throw err;
         console.log('Saved!');
     });
@@ -16,7 +16,7 @@ app.post('/save-name', (req, res) => {
 });
 
 app.get('/get-names', (req, res) => { // Nouvelle route GET
-    fs.readFile('./site/name.txt', 'utf8', (err, data) => {
+    fs.readFile('/site/name.txt', 'utf8', (err, data) => {
         if (err) throw err;
         res.send(data);
     });
