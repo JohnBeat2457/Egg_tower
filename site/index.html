@@ -1,0 +1,195 @@
+
+<!-- EPITECH 2024 -->
+<!-- JAMES GBETCHEDJI -->
+<!-- NOGE -->
+<!-- PARDON NE TOUCHER PAS AU CODE DE LA PAGE  -->
+<!-- PARDON NE TOUCHER PAS AU CODE DE LA PAGE  -->
+<!-- PARDON NE TOUCHER PAS AU CODE DE LA PAGE  -->
+<!-- PARDON NE TOUCHER PAS AU CODE DE LA PAGE  -->
+<!-- PARDON NE TOUCHER PAS AU CODE DE LA PAGE  -->
+<!-- PARDON NE TOUCHER PAS AU CODE DE LA PAGE  -->
+<!-- PARDON NE TOUCHER PAS AU CODE DE LA PAGE  -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGG TOWER</title>
+    <link rel="icon" type="image/x-icon" href="./Egg_tower.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-krKTVOqQ9k/lRIoZKNp4R7l1l3Q6lAoI51L3o5dEvk9cj1yjCKn37bO31G5T8HxwWZSQiQHcXIC9b5iwPfIXmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container {
+            padding: 40px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .container2 {
+            padding: 0px;
+            background-color: #fff;
+            text-align: center;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+            color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        .logo img {
+            width: 110px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        header:hover {
+            background-color: #ddd;
+        }
+        .logo img:hover {
+            transform: scale(1.8);
+        }
+        #menu_toggle {
+            display: none;
+        }
+        .content {
+            margin-top: 170px;
+        }
+        .games {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .qr_code_text {
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: justify;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+        }
+        .enter_name_container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .enter_name_input {
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .enter_name_button {
+            background-color: yellow;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .social_media_icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .social_media_icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social_media_icon {
+            width: 32px;
+            height: 32px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="https://www.instagram.com/the_eaters_box/"><img src="./Egg_Tower.png" alt="Logo de votre site"></a>
+            </div>
+            <div id="menu_toggle">
+                <button></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <h1>Bienvenue sur notre site web!</h1>
+            <h1>EGG TOWER</h1>
+        </div>
+    </div>
+
+    <div class="games">
+        <h1>JEU CONCOURS!</h1>
+        <p class="qr_code_text">Bienvenue au concours de QR Code organisé par "EGG TOWER" ! Préparez-vous à scanner et à gagner ! Chaque code que vous scannez vous rapporte des points, et en donnant votre nom, vous pouvez remporter encore plus de points. Rassemblez les codes, accumulez les points, et les récompenses seront à vous ! Qui sera le grand gagnant ? C'est à vous de le devenir !</p>
+    </div>
+
+    <div class="enter_name_container">
+        <input type="text" id="nameInput" placeholder="Entrez votre nom">
+        <button onclick="saveName()">ENTER NAME</button>
+        <p style="font-size: 14px; color: #0f24e4;">Veuillez bien écrire toujours votre nom et prénom.</p>
+    </div>
+
+    <div class="social_media_icons">
+        <a href="https://www.instagram.com/the_eaters_box/"><img src="./insta.png" alt="Instagram" class="social_media_icon"></a>
+        <a href="https://open.spotify.com/playlist/5gszelSJPRK0FxRDTHHgcC?si=0fb1b152c37b480b"><img src="./twitter.png" alt="Twitter" class="social_media_icon"></a>
+        <a href="https://wa.me/22953198575"><img src="./whatsapp.png" alt="WhatsApp" class="social_media_icon"></a>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_widgets">
+                <div class="widget">
+                    <h4 class="widget_title">Contact</h4>
+                    <ul class="stm_list-duty">
+                        <li class="widget_contacts_address">Avenue ... 01 BP 2377 Cotonou, Bénin</li>
+                        <li class="signal_appel">Appeler nous au :</li>
+                        <li class="widget_contacts_phone"><i class="fas fa-phone"></i> +229 53 19 85 75</li>
+                        <li class="signal_whatsapp"> Ou</li>
+                        <li class="widget_contacts_email"><a href="https://wa.me/22953198575">Ecrivez nous ici</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">Copyright © Noge. Tous droits réservés. 2024</p>
+        </div>
+    </footer>
+    <script>
+        function saveName() {
+            var name = document.getElementById('nameInput').value;
+            fetch('http://localhost:3000/save-name', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name: name }),
+            })
+            .then(response => response.json())
+            .then(data => console.log(data));
+        }
+        </script>   
+</body>
+</html>
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
+<!-- PARDON -->
