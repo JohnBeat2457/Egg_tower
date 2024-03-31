@@ -166,20 +166,20 @@
             <p class="copyright">Copyright © Noge. Tous droits réservés. 2024</p>
         </div>
     </footer>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
-        function saveName() {
-            var name = document.getElementById('nameInput').value;
-            fetch('http://localhost:3000/save-name', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name: name }),
-            })
-            .then(response => response.json())
-            .then(data => console.log(data));
+    function saveName() {
+        var user = netlifyIdentity.currentUser();
+        if (user) {
+        var name = document.getElementById('nameInput').value;
+        user.update({ data: { name: name } })
+            .then(user => console.log('Updated user data: ', user))
+            .catch(err => console.error('Error updating user data: ', err));
+        } else {
+        console.error('User is not logged in');
         }
-        </script>   
+    }
+    </script>
 </body>
 </html>
 <!-- PARDON -->

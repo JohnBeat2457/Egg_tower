@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "mongoose": "^8.2.4"
+    "mongoose": "^8.2.4",
+    "netlify": "^13.1.14",
+    "node-fetch": "^3.3.2"
   }
 }
