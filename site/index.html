@@ -89,6 +89,20 @@
             display: grid;
             grid-template-columns: 2fr 1fr;
         }
+        .grid-button {
+            column-width: 200;
+            display: grid;
+            grid-template-columns: 900px 3fr 900px 2fr 1000px 1fr;
+        }
+        .subscribe {
+            grid-column: 1;
+        }
+        .suivie {
+            grid-column: 2;
+        }
+        .name_enter {
+            grid-column: 3;
+        }
         .contact {
             grid-column: 2;
         }
@@ -165,17 +179,35 @@
         <p class="qr_code_text">Bienvenue au concours de QR Code organisé par "EGG TOWER" ! Préparez-vous à scanner et à gagner ! Chaque code que vous scannez vous rapporte des points, et en donnant votre nom, vous pouvez remporter encore plus de points. Rassemblez les codes, accumulez les points, et les récompenses seront à vous ! Qui sera le grand gagnant ? C'est à vous de le devenir !</p>
     </div>
 
-    <div class="enter_name_container">
-        <button onclick="window.location.href='https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAACL1ZB5UNlo0NFRaMUVHQlpaWVdOSDBQTFc3SzdVNS4u'" style="font-size: 18px; background-color: rgb(95, 68, 17); color: white; padding: 15px 30px; border: none; cursor: pointer;">ENTER NAME</button>
-        <p style="font-size: 14px; color: #0f24e4;">Veuillez bien écrire toujours votre nom et prénom sur cette page.</p>
+    <div class="grid-button">
+        <div class="subscribe">
+            <div class="enter_name_container">
+                <p style="font-size: 14px; color: #000000;">1ere Etape : Abonne Toi à Notre page</p>
+                <button onclick="window.location.href='https://www.instagram.com/the_eaters_box/'" style="font-size: 18px; background-color: rgb(95, 68, 17); color: white; padding: 15px 30px; border: none; cursor: pointer;">ABONNE TOI</button>
+                <p style="font-size: 14px; color: #ff0000;">L'echec de cette étape te disqualifie du concours.</p>
+            </div>
+        </div>
+        <div class="suivie">
+            <div class="enter_name_container">
+                <p style="font-size: 14px; color: #000000;">2e Etape : Partage notre page sur un réseaux </p>
+                <button onclick="window.location.href='https://www.instagram.com/the_eaters_box/?utm_source=ig_web_button_share_sheet'" style="font-size: 18px; background-color: rgb(95, 68, 17); color: white; padding: 15px 30px; border: none; cursor: pointer;">PARTAGER</button>
+                <p style="font-size: 14px; color: #ff0000;">L'echec de cette étape te disqualifie du concours.</p>
+            </div>
+        </div>
+        <div class="name_enter">
+            <div class="enter_name_container">
+                <p style="font-size: 14px; color: #000000;">Dernière Etape : Entre ton nom pour valider des étapes</p>
+                <button onclick="window.location.href='https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAACL1ZB5UNlo0NFRaMUVHQlpaWVdOSDBQTFc3SzdVNS4u'" style="font-size: 18px; background-color: rgb(95, 68, 17); color: white; padding: 15px 30px; border: none; cursor: pointer;">ENTRE TON NAME</button>
+                <p style="font-size: 14px; color: #0f24e4;">Veuillez bien écrire toujours votre nom sur cette page.</p>
+                <p style="font-size: 14px; color: #ff0000;">L'echec de cette étape te disqualifie du concours.</p>
+            </div>
+        </div>
     </div>
-
     <div class="social_media_icons">
         <a href="https://www.instagram.com/the_eaters_box/"><img src="./insta.png" alt="Instagram" class="social_media_icon"></a>
         <a href="https://open.spotify.com/playlist/5gszelSJPRK0FxRDTHHgcC?si=0fb1b152c37b480b"><img src="./twitter.png" alt="Twitter" class="social_media_icon"></a>
         <a href="https://wa.me/22953198575"><img src="./whatsapp.png" alt="WhatsApp" class="social_media_icon"></a>
     </div>
-
     <div class="grid-container">
         <div class="content2">
             <footer id="footer">
